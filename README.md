@@ -1,1 +1,2 @@
-# my-repo
+#!/bin/bash
+echo "git"
