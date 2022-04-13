@@ -8,8 +8,25 @@ pipeline {
     }
 
     stage('stage2') {
-      steps {
-        sh 'echo " my name "'
+      parallel {
+        stage('stage2') {
+          steps {
+            sh 'echo " my name "'
+          }
+        }
+
+        stage('step1') {
+          steps {
+            sh 'echo " hostname"'
+          }
+        }
+
+        stage('step2') {
+          steps {
+            sh 'echo " this my file"'
+          }
+        }
+
       }
     }
 
