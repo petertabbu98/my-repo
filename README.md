@@ -1,6 +1,23 @@
-#!/bin/bash
-echo "git"
-this my file
-this is my test
-this is my label
-hi
+pipeline{
+       agent any
+       stages{
+             stage ('build'){
+                       steps{
+                           echo " hello wrold"
+                           stage ('test'){
+                                  steps{
+                                  
+                                  
+                                  }
+                           
+                           }
+                       
+                       }
+             
+             }
+       
+       }
+       
+         
+
+}
