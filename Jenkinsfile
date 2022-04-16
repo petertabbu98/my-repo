@@ -32,3 +32,8 @@ pipeline {
 
   }
 }
+
+
+
+
+this is pipeline script
